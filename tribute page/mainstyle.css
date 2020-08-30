@@ -1,0 +1,21 @@
+body{
+  background-color: #5de6de;
+  background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#enstein, #jobs, #aristotle{
+  height: 300px;
+  width: 200px;
+}
+
+h1{
+  text-align: center;
+}
