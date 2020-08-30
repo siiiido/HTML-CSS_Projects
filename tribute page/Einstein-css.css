@@ -1,0 +1,57 @@
+body{
+  background-color: #ebe7f1;
+}
+h1,h3, .part1{
+  text-align: center;
+}
+h1{
+  color: blue;
+  margin-bottom: 0;
+}
+h3{
+  color: green;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.part1{
+  font-weight: bold;
+  font-size: 15px;
+}
+#Einstein-img{
+  width: 200px;
+  height: 270px;
+
+}
+.job{
+  margin-top: 0;
+  margin-bottom: 35px;
+  height: 5px;
+
+}
+.things{
+  padding-bottom: 1px;
+  height: 7px;
+
+}
+.main-content{
+  font-size: 15px;
+  padding-bottom: 0;
+  height: 620px;
+}
+
+.quote{
+  height: auto;
+  padding-top: 0px;
+  padding-left: 40px;
+}
+.quote-1{
+  margin-bottom: 10px;
+}
+.name{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.footer{
+  padding-left: 10px;
+  color: purple;
+}
