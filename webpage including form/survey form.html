@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First Permission</title>
+    <link rel="stylesheet" href="survey form.css">
+  </head>
+  <body>
+    <div id="outside">
+      <!-- 아직 index.html 없음 action 어디로 넘길껀지 생각-->
+      <form id="survey-form" action="index.html" method="post">
+        <h1 id="title">Application For Permission To Date My Daughter</h1>
+        <p id="description"><b>Note:</b> Form is to be completed at least 21 days prior to date</p>
+        <!-- <b> : 굵게  <strong>와 비슷 -->
+
+
+        <!--Personal Details-->
+        <fieldset>
+          <legend>Personal Details</legend>
+          <div>
+            <label for="name" id="name-label">Name : </label>
+            <input type="text" name="user_name" placeholder="Enter name here" required id="name">
+          </div>
+
+          <div>
+            <label for="name" id="adress-label">Address</label>
+            <input type="Address" name="Address" id="address" placeholder="Enter address here">
+          </div>
+
+          <div>
+            <label for="Email" id="email-label">Email</label>
+            <input type="email" name="user_email" required id="email" placeholder="Enter email here">
+          </div>
+
+          <div>
+            <label for="phone" id="number-label">Phone Number</label>
+            <input type="number" name="user_name" id="number" placeholder="Enter 10 digit number" min="1" max="9">
+          </div>
+
+          <div>
+            <label for="iq" id="iq-label">IQ</label>
+            <input type="number" name="iq" id="iq" placeholder="Enter IQ here">
+          </div>
+
+
+          <!-- Radio Button (동그라미 체크 버튼) -->
+
+          <div>
+            <label for="Gender">Gender</label>
+            <p>
+              <input type="radio" name="gender" value="male" checked>Male<br>
+              <input type="radio" name="gender" value="femail">Femail <br>
+              <input type="radio" name="gender" value="ohter">Ohter <br>
+            </p>
+          </div>
+          <label for="date-label">Date of Propsed Outing : </label>
+          <input type="date" name="bday">
+
+        </fieldset>
+
+        <fieldset>
+          <label for="Gender">Check All That Apply</label>
+          <p>
+            <input type="checkbox" name="tattoo" value="tattoo">I have tattoos and/or piercings <br>
+            <input type="checkbox" name="age" value="Car"> I am more than 2 years older than my daughter <br>
+            <input type="checkbox" name="car" value="Car">I own a panel van or V8 ute <br>
+            <input type="checkbox" name="work" value="work" checked>I wokr full-time <br>
+            <input type="checkbox" name="rich" value="rich" checked>My parents are rich <br>
+            <input type="checkbox" name="loc" value="loc" checked>Is the date at a well lit public location <br>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <div>
+            <label for="politics">Political Persuasion : </label>
+            <select id="dropdown">
+              <option value="left">Left Wing</option>
+              <option value="right">Right Wing</option>
+              <option value="conservative">Conservative</option>
+              <option value="nazi">Nazi</option>
+            </select>
+            <br>
+            <label for="politics">Education Level Completed :</label>
+            <select id="dropdown2">
+              <option value="University">University</option>
+              <option value="College">College</option>
+              <option value="Secondary">High School</option>
+              <option value="None">None</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Essay Section</legend>
+          <div>
+            <label for="msg"></label>
+            <p>In 50 words or more explain why you want to date my daughter</p>
+            <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>
+          </div>
+
+          <div>
+            <label for="msg">Please upload contact details for 2 references</label><br>
+            <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>
+          </div>
+          <p>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:
+          <button>Attach Files</button></p>
+        </fieldset>
+
+        <div id="submitbutton">
+          <button type="submit" id="submit">Send your application</button>
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>
