@@ -11,6 +11,8 @@ body{
 h1{
   font-size: 1.5em;
   text-align: center;
+
+  /* 시작하는 단어 모두 대문자로 */
   text-transform: capitalize;
 }
 form{
