@@ -18,8 +18,8 @@ p{
   margin: auto;
   background-color: #f3f3f3;
   border-radius: 10px;
-  width: 800px;
-  padding: 20px 10px 10px 10px;
+  width: 700px;
+  padding: 40px 20px 20px 20px;
   /* 굳이 border로 설정안해도 테두리를 전체로 div로 해서 색 넣으면 border처럼 가능*/
 }
 
