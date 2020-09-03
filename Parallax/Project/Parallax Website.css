@@ -1,0 +1,131 @@
+body{
+  margin: 0;
+  font-size: 16px;
+}
+
+.scene.one{
+  background-image: url("img/image1.jpg");
+}
+.scene.two{
+  background-image: url("img/image2.jpg");
+}
+.scene.three{
+  background-image: url("img/image3.jpg");
+}
+
+.scene.one{
+  width: auto;
+  height: 100vh;
+  background-attachment: fixed;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.scene.one header{
+  color: white;
+  max-width: 60%;
+  position: relative;
+  height: 10%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  background-color: black;
+}
+.scene.one h1{
+  margin:0;
+  padding-top: 25px;
+  font-size: 27px;
+}
+
+
+.two{
+  width: auto;
+  height: 70vh;
+  background-attachment: fixed;
+  overflow: hidden;
+  background-size: cover;
+}
+.three{
+  width: auto;
+  height: 70vh;
+  background-attachment: fixed;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.two header{
+  color: white;
+  max-width: 60%;
+  position: relative;
+  height: 10%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+}
+
+.three header{
+  color: white;
+  max-width: 60%;
+  position: relative;
+  height: 10%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+}
+
+.two h1{
+  margin:0;
+  padding-top: 15px;
+  padding-top: 25px;
+  font-size: 27px;
+}
+
+
+.three h1{
+  margin:0;
+  padding-top: 15px;
+  padding-top: 25px;
+  font-size: 27px;
+}
+
+
+.section header{
+  position: relative;
+  max-width: 70%;
+  text-align: center;
+  transform: translateX(-50%) translateY(10%);
+  left: 50%;
+  height: 50vh;
+
+}
+.sone{
+  background-color: #f4f4f4;
+  color: #666;
+  height: 55vh;
+
+}
+.section h3{
+  padding-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+
+.stwo, .sthree{
+  background-color: #282e34;
+  color: #ddd;
+  font-family: 'Architects Daughter', cursive;
+}
+.stwo header, .sthree header{
+  padding-top: 35px;
+}
+
+
+@@media(max-width:813px) {
+  .sone{
+    width: 90%;
+  }
+
+}
