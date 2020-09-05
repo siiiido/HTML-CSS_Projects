@@ -123,9 +123,8 @@ body{
 }
 
 
-@@media(max-width:813px) {
-  .sone{
-    width: 90%;
-  }
+@media(max-width:755px) {
+
+
 
 }
