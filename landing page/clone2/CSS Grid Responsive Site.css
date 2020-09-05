@@ -1,0 +1,157 @@
+
+
+body{
+  padding: 0;
+  margin: 0;
+  background: #333;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+div{
+  display: block;
+}
+header{
+  display: block;
+}
+
+#showcase{
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+#showcase .bg-image{
+  position: absolute; /*원하는 위치 조정해서 둠*/
+  background:#333 url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1; /* 이미지 뒤로가게 할려고*/
+  opacity: 0.4;
+
+
+}
+
+#showcase .content-wrap, #section-a .content-wrap{
+  padding: 0 1.5em;
+}
+
+#showcase h1{
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+h1,h2,h3{
+  margin: 0;
+  padding: 1em 0;
+}
+
+h1{
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+p{
+  margin: 0;
+  padding: 1em 0;
+  display: block;
+}
+
+.btn{
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border:1px solid #666;
+  margin: 0.5em 0;
+}
+a{
+  cursor: pointer;
+}
+
+
+main{
+  display: block;
+}
+
+#section-a{
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+}
+
+
+h2{
+  display: block;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#section-b{
+  padding: 2em 1em 1em;
+}
+
+#sectiob-b ul{
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+
+#section-b li{
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+  display: list-item;
+}
+
+
+
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-content{
+  padding: 1.5em;
+}
+h3{
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+#section-c{
+  background: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+#section-d .box:first-child{
+  background: #2690d4;
+}
+#section-d .box{
+  padding: 2em;
+  color: #fff;
+}
+
+#main-footer{
+  padding: 2em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+footer{
+  display: block;
+}
+
+
+#main-footer a{
+  color: #2690d4;
+  text-decoration: none;
+}
