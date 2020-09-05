@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: block;
+  margin: 0;
+  font-size: 17px;
+  color: #926239;
+  line-height: 1.6;
+}
+
+
+#showcase{
+  background-image: url('http://traversymedia.com/downloads/assets/beachshowcase.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0 20px;
+  text-align: center;
+
+
+  display: flex; /* display를 flxe로 설정해야 밑에 요소들을 적용할 수 있다
+  주축 -> 가로 , 교차축->세로*/
+  justify-content: center;/*주축의 중앙을 기준으로함*/
+  flex-direction: column; /*flex항목 배치 기본값은 row(가로) 여기서는 column(세로)로 설정*/
+  /*즉 위 3가지로 인해 #showcase의 item들이 가로 세로 center임*/
+  align-items: center; /*flex에서 교차축을 center로*/
+
+}
+
+
+h1{
+  display: block;
+  font-weight: bold;
+
+}
+
+#showcase h1{
+  font-size: 50px;
+  line-height: 1.2; /*문장 위아래 줄 간격*/
+}
+
+p{
+  display: block;
+}
+
+#showcase p{
+  font-size: 20px;
+}
+
+#showcase .button{
+  font-size:18px;
+  color: #926239;
+  border: #926239 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#section-a{
+  padding: 20px;
+  color: #fff;
+  background: #926239;
+  text-align: center;
+}
+
+#section-b{
+  padding: 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+#section-c div{
+  padding: 20px;
+}
+
+#section-c{
+  display: flex;/*flex하면 기본값은 가로로 나눠짐*/
+  text-align: center;
+
+}
+#section-c .box-1, #section-c .box-3{
+  background: #926239;
+  color: #fff;
+}
