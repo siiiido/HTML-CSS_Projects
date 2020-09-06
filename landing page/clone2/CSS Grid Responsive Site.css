@@ -155,3 +155,17 @@ footer{
   color: #2690d4;
   text-decoration: none;
 }
+
+@media(min-width:700px) {
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+  }
+
+
+}
