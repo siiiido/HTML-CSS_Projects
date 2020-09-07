@@ -1,0 +1,39 @@
+/*:root{
+  --yellow:#ffc600;
+  --black:#272727;
+}
+*{
+  box-sizing: inherit;
+}
+
+html{
+  font-weight: 900;
+  color: var(--black);
+  font-size: 10px;
+  text-shadow: 0 2px 0 rgba(0 , 0, 0, 0.7);
+}
+body{
+  font-size: 15px;
+  background-image: linear-gradient(110deg, #f93d66,#6d47d9);
+  min-height: calc(100vh - 100px);
+  /*background-size: 340px auto;*/
+  margin: 50px;
+  background-attachment: fixed;
+  letter-spacing: -1px;
+  display: block;
+  margin-left: 8px;
+}
+
+.wrapper{
+  display: grid;
+  grid-gap: 20px;
+}
+nav{
+  display: block;
+}
+button{
+  background: #ffc600;
+  border: 0;
+  padding: 10px 20px;
+}
+*/
