@@ -1,0 +1,65 @@
+table{
+  margin-bottom: 44px;
+  width: 100%;
+  /* 테두리 통합, 분리하기 (collapse : 테두리르 하나로 합침) */
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* tr : 행(가로),  td : 열(세로), th : 열 제목 */
+thead td{
+  color: #648880;
+  font-size: 24px;
+}
+
+th{
+  padding-right: 45px;
+  text-align: right;
+  width: 20%;
+}
+
+th, td{
+  padding-bottom: 22px;
+  vertical-align: top;
+}
+td{
+  width: 40%;
+}
+.schedule-offset{
+  color: #a9b2b9;
+}
+thead{
+  line-height: 44px;
+}
+
+
+tbody th{ /*시간 부분*/
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 22px;
+  text-transform: uppercase;
+}
+/*only-of-type : 오직 한 요소만 적용*/
+tbody td:only-of-type{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+tbody td{
+  border-top: 1px solid #dfe2e5;
+  padding-top: 21px;
+}
+
+table a{
+  color: #888;
+}
+table h4{
+  margin-bottom: 0;
+}
+h4{
+  font-size: 18px;
+}
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
