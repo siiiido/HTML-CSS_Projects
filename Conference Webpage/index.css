@@ -5,21 +5,9 @@
   박스모델 전체 너비 값으로 사용*/
   box-sizing: border-box;
 }
-body{
-  background: #293f50;
-  color: #888;
-}
-header{
-  height: 40px;
-}
-.group{
-  /*float 좌우로 없앰*/
-  clear: both;
-}
-.container{
-  padding-left: 30px;
-  padding-right: 30px;
-}
+
+
+
 .container, .grid{
   margin: 0 auto;
   /*width 정해줬으니깐 하면 줄여도 static임 안정해주면 화면 줄일때
@@ -27,26 +15,18 @@ header{
   width: 960px;
 
 }
-.logo{
-  border-top: 4px solid #648880;
-  float: left;
-  font-size: 48px;
-  font-weight: 100;
-  letter-spacing: .5px;
-  line-height: 44px;
-  padding: 40px 0 22px 0;
-  text-transform: uppercase;
-}
+/*
+.container{
+  padding-left: 30px;
+  padding-right: 30px;
+}*/
 
 
 h1, h3, h4, h5, p{
   margin-bottom: 22px;
 }
 
-h1{
-  font-size: 36px;
-  line-height: 44px;
-}
+
 h1, h2, h3, h4{
   color: #648880;
 }
@@ -55,43 +35,14 @@ a{
   color: #648880;
   text-decoration: none;
 }
-.primary-header a, .primary-footer a{
-  color: #fff;
-}
+
 
 h3{
   font-size: 21px;
 }
-.tagline{
-  margin: 66px 0 22px 0;
-  text-align: right;
-  width: 450px;
-  float: right;
-}
 
-.nav{
-  text-align: right;
-  float: right;
-}
-.primary-nav{
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-}
-ol,ul{
-  list-style: none;
-}
-ul{
-  display: block;
-}
-.nav li{
-  display: inline-block;
-  margin: 0 10px;
-  /*display를 inline-block으로 하고 수직 정렬 방법임*/
-  vertical-align: top;
 
-}
+
 
 .hero{
   color: #fff;
@@ -160,18 +111,6 @@ h5{
   display: block;
   margin-bottom: 22px;
   max-width: 100%;
-}
-
-.primary-footer{
-  color: #648880;
-  font-size: 14px;
-  padding-bottom: 44px;
-  padding-top: 44px;
-}
-
-.primary-footer small{
-  float: left;
-  font-weight: 400;
 }
 
 
