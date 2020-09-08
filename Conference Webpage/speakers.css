@@ -1,14 +1,25 @@
-a{
-  color: #648880;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 
 .speaker{
   margin-bottom: 44px;
 }
 
-.col-2-3{
-  width: 66.66%;
+
+.speaker-info{
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  margin-top: 88px;
+  padding: 22px;
+  text-align: center;
+
+}
+
+.speaker-info img{
+  border-radius: 50%;
+  /*height가 너무 커서 옆으로 안가서 줄여주는 것*/
+  height: 130px;
+
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+
 }
