@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
 h3{
   font-size: 21px;
 }
@@ -44,8 +43,6 @@ h3{
   text-transform: uppercase;
 }
 
-/*================== row============= */
-
 
 h5{
   color: #a9b2b9;
@@ -60,6 +57,3 @@ h5{
   margin-bottom: 22px;
   max-width: 100%;
 }
-
-
-/* spaekr, schedule는 줄맞췄는데 venue는 어떻게 맞추는지 모르겠음*/

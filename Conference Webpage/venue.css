@@ -1,1 +1,6 @@
-/* 지도랑 주소랑 같은 수평에 어떻게 나두는지 모르겠음 */
+.venue-theatre{
+  margin-bottom: 66px;
+}
+.venue-map{
+  height: 264px;
+}

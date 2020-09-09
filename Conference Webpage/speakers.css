@@ -1,25 +1,23 @@
-
-
+.speaker{
+  width: 1050px;
+}
 .speaker{
   margin-bottom: 44px;
 }
-
-
 .speaker-info{
   border: 1px solid #dfe2e5;
   border-radius: 5px;
   margin-top: 88px;
   padding: 22px;
   text-align: center;
-
 }
-
 .speaker-info img{
   border-radius: 50%;
   /*height가 너무 커서 옆으로 안가서 줄여주는 것*/
   height: 130px;
-
   margin: -66px 0 22px 0;
   vertical-align: top;
-
+}
+aside{
+  float: right;
 }
