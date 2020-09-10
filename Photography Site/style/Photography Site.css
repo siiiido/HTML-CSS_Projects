@@ -1,0 +1,46 @@
+body{
+  background: #eee;
+  text-align: center;
+}
+.center{
+  background: #fff;
+  width: 900px;
+}
+
+/* header img{
+  width: 50px;
+  height: 50px;
+  float: right;
+} */
+.title{
+  float: left;
+  height: 90%;
+}
+main img{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  color: #333;
+  font-size: 15px;
+  padding: 10px 30px;
+}
+.our{
+  background: #333;
+  color: #fff;
+
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 18px;
+
+}
+.our p{
+  text-align: center;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  left: 50%;
+}
