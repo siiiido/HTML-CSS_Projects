@@ -20,7 +20,7 @@ body{
 }
 nav{
   height: 40px;
-  width: 100;
+  width: 100%;
   background-color: #333;
   color: rgb(51 , 34, 34);
   position: fixed;
@@ -85,6 +85,7 @@ nav a{
 }
 a{
   text-decoration: none;
+  color: #eee;
 }
 .text-light{
   color: #f4f4f4;
@@ -98,6 +99,8 @@ img{
 }
 h3{
   font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .btn-secondary{
   background: #103063;
@@ -119,11 +122,20 @@ h2{
   font-weight: bold;
   margin-bottom: 20px;
 }
+p{
+  margin-bottom: 20px;
+}
+.btn{
+  margin-bottom: 20px;
+}
+.text-secondary{
+  color: #103063;
+}
 
 footer .footer-cols{
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 4, 1fr;
+  grid-template-columns: repeat(4,1fr);
   padding: 2rem;
   text-align: left;
   font-size:14px;
@@ -135,7 +147,7 @@ footer .footer-cols ul{
 
 footer .footer-cols ul li:first-child{
   font-size: 1.2rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   border-bottom: #444 solid 1px;
   margin-bottom: 1rem;
 }
@@ -147,3 +159,57 @@ footer .footer-bottom{
 .text-center{
   text-align: center;
 }
+
+
+@media(max-width:580px)
+{
+  #showcase p{
+    display: none;
+  }
+  #showcase{
+    height: 50vh;
+  }
+  #showcase h1{
+    font-size: 3rem;
+  }
+  #showcase h2{
+    font-size: 1.5rem;
+  }
+  #showcase .container{
+    margin-top: 15vh;
+  }
+  #showcase nav li{
+    display: none;
+  }
+  nav{
+    height: auto;
+  }
+}
+@media(min-width:580px){
+  #openup{
+    display: none;
+  }
+}
+@media(max-width:780px)
+{
+footer .footer-cols{
+    display: none;
+  }
+}
+/*
+em은 부모의 폰트 사이즈에 영향을 받음
+ex)
+<body>
+ <div class="test">Test</div>
+</body>
+
+body -> font-size:14px; 이면
+div font-size:1.2em은 14px*1.2
+
+
+rem은 root최상위 태그(요소)에 지정한 것을 기준으로 삼음 주로 최상위태그는 html태그
+
+
+
+vh(뷰포트)
+브라우저 heigh가 900px이면 1v=9px */
