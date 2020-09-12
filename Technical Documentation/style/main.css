@@ -1,0 +1,105 @@
+/* margin padding 순서
+margin: [margin-top] [margin-right] [margin-bottom] [margin-left];
+margin: [margin-top] [margin-left = margin-right] [margin-bottom];
+margin: [margin-top=margin-bottom] [margin-left = margin-right];
+margin: [margin-top = margin-bottom = margin-left = margin-right]; */
+body{
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+#navbar{
+  /* position : static, relative, absolute, fixed
+  static을 제외한 나머지는 top bottom left right로 위치 조절 가능
+  예를 들어 왼쪽 윗부분 구석에 위치시킬려면 top:0 left:0 이렇게 하면됨
+  static은 top bottom left right로 위치 조절 못함 float로 좌우 조절 가능
+  relative는 위치 조절 가능(겹치기 가능)
+  fixed는 위치 조절을 하면 스크롤을 내려도 계속 고정되어 표시됨
+  absolute는 부모, 조상 요소중 position이 relative여야됨    */
+  position: fixed;
+  top: 0%;
+  left: 0%;
+
+  height: 100%;
+  width: 300px;
+  border-right: solid;
+}
+
+header{
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+main header{
+  text-align: left;
+  margin: 0;
+}
+#navbar ul{
+  height: 88%;
+  padding:0;
+  overflow-y: auto;
+  overflow-y: hidden;
+}
+
+#navbar li{
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+#navbar a{
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #4d4e53;
+  cursor: pointer;
+}
+
+
+main{
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: : 110px;
+}
+
+section li{
+  margin: 15px 0px 0px 20px;
+  list-style: circle;
+}
+
+code{
+  display: block;
+  text-align: left;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  line-height: 2;
+}
+
+
+@media(max-width:815px) {
+  #navbar{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+  main{
+    margin-top: 270px;
+    margin-left: 0px;
+    position: relative;
+  }
+
+}
