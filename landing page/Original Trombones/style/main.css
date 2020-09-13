@@ -1,0 +1,122 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
+body{
+  background: #eee;
+  line-height: 1.5;
+}
+.navbar{
+  display: flex;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.navbar h1{
+  font-size: 2rem;
+
+}
+.navbar a{
+  margin: 1rem;
+  /* 어떻게 h1글자는 왼쪽 a는 오른쪽으로 할까? */
+}
+
+.header{
+  text-align: center;
+  height: 10rem;
+  font-weight: bold;
+  padding-top: 1.5rem;
+}
+.header h2{
+  font-size: 1.5rem;
+}
+.header input{
+  margin: 1rem;
+  width: 300px;;
+  height: 25px;;
+}
+.header a{
+  background: yellow;
+
+  /* a태그 크기 조절 방법 */
+  /* display: inline-inline-block;하고 width heigth로 조절 */
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  padding-top: 2px;
+
+
+}
+#features{
+  margin:2rem 14rem; /*중앙 정렬인것처럼 보이지만 글은 왼쪽에서 시작함*/
+
+}
+#features h2{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#features div{
+  margin: 3rem 0;
+}
+
+#how{
+  text-align: center;
+}
+
+#pricing{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+  padding: 1rem;
+  text-align: center;
+
+}
+.item{
+  border: 1.5px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  /* padding: 1rem; */
+
+}
+#pricing h3{
+  /* border: 1px solid; */
+  background: lightgray;
+  font-weight: bold;
+}
+.price{
+  font-weight: bold;
+  font-size: 1rem;
+}
+#pricing a{
+  background: yellow;
+  display: inline-block;
+  width: 4rem;
+  height: 1.5rem;
+  padding-top: 0.5rem;;
+  margin: 5px 0;
+}
+
+
+
+
+/* footer start */
+footer{
+  background: white;
+  width: 60rem;
+  margin: 0 15rem;
+  height: 5rem;
+  text-align: right;
+  padding: 1.5rem 3rem 0 0;
+
+}
+footer a{
+  margin-right: 1rem;
+}
