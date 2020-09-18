@@ -1,7 +1,12 @@
 @import "status-bar.css";
 @import "variables.css";
 @import "login.css";
-
+@import "nav-bar.css";
+@import "friends.css";
+@import "screen-header.css";
+@import "user-component.css";
 body{
+  color: #2e363e;
   font-family: sans-serif;
+  height: 1000vh;
 }

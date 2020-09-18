@@ -1,4 +1,9 @@
 .status-bar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* #6.12 보기 */
+  box-sizing: border-box; /*box에 패딩을 줘도 전체 box크기를 늘어나지 않게 한다*/
   display: flex;
   justify-content: center;
   padding: 5px 3px;
