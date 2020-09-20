@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/setting.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Freind-screen on Kokoa Talk</title>
+  <title>More-screen on Kokoa Talk</title>
   <script src="https://kit.fontawesome.com/b353b00dbe.js" crossorigin="anonymous"></script>
 </head>
 
@@ -27,58 +27,30 @@
 
 
   <header class="screen-header">
-    <h1 class="screen-header__title">Friends</h1>
+    <h1 class="screen-header__title">More</h1>
     <div class="screen-header__icons">
       <span><i class="fas fa-search fa-lg"></i></span>
       <span><i class="fas fa-music fa-lg"></i></span>
-      <span><i class="fas fa-cog fa-lg"></i></span>
+      <span class="screen-header__icons__dot"><i class="fas fa-cog fa-lg"></i><span class="screen-header__icons__red">.</span></span>
 
     </div>
   </header>
 
 
-
-
-
-  <a id="friends-display-link">
-    <i class="fas fa-info-circle"></i>Friends's Names Display
-    <i class="fas fa-chevron-right fa-xs"></i>
-  </a>
-
-
-  <main class="friends-screen">
+  <main class="main-screen">
     <div class="user-component">
       <div class="user-component__column">
         <img class="user-component__avatar user-component__avatar--xl" src="https://images.unsplash.com/photo-1600373174847-aa05592023d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=941&q=80" alt="">
         <div class="user-component__text">
           <h4 class="user-component__title">Tony</h4>
-          <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+          <h6 class="user-component__subtitle">+ 010 7102 8746</h6> <!--빨간 느낌표 만들기-->
         </div>
       </div>
-      <div class="user-component__column"></div>
+      <div class="user-component__column">
+        <i class="far fa-comment-alt fa-2x"></i>
+      </div>
     </div>
-    <div class="friends-screen__channel">
-      <div class="friends-screen__channel-header">
-        <span>Channel</span>
-        <i class="fas fa-chevron-up fa-xs"></i>
 
-      </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img class="user-component__avatar user-component__avatar--sm" src="https://images.unsplash.com/photo-1600373174847-aa05592023d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=941&q=80" alt="">
-          <div class="user-component__text">
-            <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
-            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
-          </div>
-        </div>
-        <div class="user-component__column">
-          <div>
-            <span>2</span><i class="fas fa-chevron-right fa-xs"></i>
-          </div>
-        </div>
-      </div>
-
-    </div>
   </main>
 
 
@@ -87,14 +59,14 @@
     <ul class="nav__list">
       <li class="nav__btn">
         <a class="nav__link" href="friends.html">
-          <i class="fas fa-user fa-2x"></i>
+          <i class="far fa-user fa-2x"></i>
         </a>
       </li>
 
       <li class="nav__btn">
         <a class="nav__link" href="chats.html">
           <span class="nav__notification badge">1</span>
-          <i class="far fa-comments fa-2x"></i>
+          <i class="far fa-comment fa-2x"></i>
         </a>
       </li>
 

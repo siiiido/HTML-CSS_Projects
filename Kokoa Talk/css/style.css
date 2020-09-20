@@ -5,8 +5,16 @@
 @import "friends.css";
 @import "screen-header.css";
 @import "user-component.css";
-body{
+@import "badge.css";
+@import "find.css";
+@@import "icon-raw.css";
+
+body {
   color: #2e363e;
   font-family: sans-serif;
   height: 1000vh;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
