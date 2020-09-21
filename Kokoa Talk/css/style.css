@@ -7,7 +7,11 @@
 @import "user-component.css";
 @import "badge.css";
 @import "find.css";
-@@import "icon-raw.css";
+@import "icon-row.css";
+@import "more.css";
+@import "alt-screen-header.css";
+@import "settings.css";
+@import "chat.css";
 
 body {
   color: #2e363e;
