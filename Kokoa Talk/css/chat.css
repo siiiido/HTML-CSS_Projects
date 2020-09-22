@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 11000vh;
+  height: 500vh;
 }
 
 #chat-screen .alt-header {
@@ -11,11 +11,24 @@
   background-color: #abc1d1;
 }
 
+/* @keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+} */
 .main-chat {
-  margin-top: 120px;
+  margin-top: 180px;
   display: flex;
+  /* display: none; */
   flex-direction: column;
   align-items: center;
+  /* animation: fadeIn 0.8s linear; */
 }
 
 #chat-screen .status-bar {
@@ -36,11 +49,32 @@
   margin-bottom: 25px;
 }
 
+/*
+message-row의 first-child이용해 first에는 왼쪽에서 나오게
+last-child는 오른쪽에 나오게 할려는데 first-child가 적용이 되지않음
+
+@keyframes firstMsg {
+  from {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+}
+.message-row:first-child{
+  animation: firstMsg 1s ease-in-out;
+
+} */
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  border: 5px solid black;
 }
+
 
 .message-row img {
   width: 50px;
@@ -74,8 +108,21 @@
   font-size: 14px;
 }
 
+/* @keyframes secondMsg {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  to {
+    opacity: 1;
+    transform:
+  }
+} */
 .message-row--own {
   justify-content: flex-end;
+  /* animation: secondMsg 2s ease-in-out; */
+  /* animation-delay: 1s; */
 }
 
 .message-row--own .message__bubble {
@@ -101,9 +148,10 @@
   padding: 5px 25px;
   box-sizing: border-box;
   align-items: center;
+  transition: all .3s ease-in-out;
 }
 
-.reply i{
+.reply i {
   opacity: 0.5
 }
 
@@ -122,12 +170,15 @@
   width: 100%;
   border: var(--main-border);
   border-radius: 20px;
+  box-sizing: border-box;
+  /* 여기가 있어야 밑에가 다 잘 돌아감 */
+  transition: all 0.3s ease-in-out;
 }
 
 .fa-smile-wink,
 .reply__column:last-child button {
   position: absolute;
-  right: -18px;;
+  right: 5px;
   top: 4px;
 }
 
@@ -135,7 +186,8 @@
   right: 40px;
   top: 10px;
 }
-.reply__column button{
+
+.reply__column button {
   background-color: var(--yellow);
   border: none;
   width: 30px;
@@ -144,11 +196,31 @@
 }
 
 .reply__column button:focus,
-.reply__column button:active{
+.reply__column button:active {
   outline: none;
-
 }
 
-.reply__column button i{
+.reply__column button i {
   opacity: 1;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 98vw;
+  transform: translateX(-13%) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }
