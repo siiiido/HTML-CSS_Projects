@@ -12,6 +12,7 @@
 @import "alt-screen-header.css";
 @import "settings.css";
 @import "chat.css";
+@import "no-mobile.css";
 
 body {
   color: #2e363e;
