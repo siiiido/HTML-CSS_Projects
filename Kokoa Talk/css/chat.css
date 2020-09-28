@@ -28,6 +28,7 @@
   /* display: none; */
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   /* animation: fadeIn 0.8s linear; */
 }
 
@@ -49,10 +50,6 @@
   margin-bottom: 25px;
 }
 
-/*
-message-row의 first-child이용해 first에는 왼쪽에서 나오게
-last-child는 오른쪽에 나오게 할려는데 first-child가 적용이 되지않음
-
 @keyframes firstMsg {
   from {
     transform: translateX(-80px);
@@ -64,17 +61,22 @@ last-child는 오른쪽에 나오게 할려는데 first-child가 적용이 되�
     transform: translateX(-10px);
   }
 }
-.message-row:first-child{
-  animation: firstMsg 1s ease-in-out;
 
-} */
+.message .message-row:first-child {
+  animation: firstMsg 1.5s ease-in-out;
+}
+
+.message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 25px;
-  border: 5px solid black;
 }
-
 
 .message-row img {
   width: 50px;
@@ -108,7 +110,7 @@ last-child는 오른쪽에 나오게 할려는데 first-child가 적용이 되�
   font-size: 14px;
 }
 
-/* @keyframes secondMsg {
+@keyframes secondMsg {
   from {
     opacity: 0;
     transform: translateX(80px);
@@ -118,11 +120,15 @@ last-child는 오른쪽에 나오게 할려는데 first-child가 적용이 되�
     opacity: 1;
     transform:
   }
-} */
+}
+
+.message .message-row:last-child {
+  animation: secondMsg 1.5s ease-in-out;
+  animation-delay: 1.7s;
+}
+
 .message-row--own {
   justify-content: flex-end;
-  /* animation: secondMsg 2s ease-in-out; */
-  /* animation-delay: 1s; */
 }
 
 .message-row--own .message__bubble {
